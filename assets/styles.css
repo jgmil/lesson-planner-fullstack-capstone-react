@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules below)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F5F5F5;
+    color: #0F1626;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subject-title,
+.unit-title-dash,
+.lesson-detail input[type="text"] {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+header {
+    font-size: 18px;
+    color: #F5F5F5;
+    background-color: #0F1626;
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+
+form {
+    font-size: 14px;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+.float-right {
+    float: right;
+    display: inline-block;
+    width: auto;
+}
+
+header > a {
+    color: #FF533D;
+}
+
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+button,
+input,
+textarea,
+select,
+input[type="date"],
+.to-dashboard {
+    padding: 5px 10px;
+    border: 1px solid #0F1626;
+    color: #0F1626;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3,
+h4,
+.subject-title {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+section {
+    padding: 10px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="number"] {
+    width: auto;
+}
+
+.landing-row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row2 {
+    background-color: rgba(0, 0, 0, 0.05);
+    max-width: none;
+}
+
+.landing-row > div,
+.landing-row > form {
+    width: 47%;
+    display: inline-block;
+    min-height: 200px;
+    padding: 50px;
+}
+
+.landing-row p {
+    margin-top: 10px;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 28px;
+}
+
+select {
+    margin-right: 10px;
+}
+
+#create-account-container {
+    vertical-align: top;
+}
+
+.subject-shortcut {
+    color: #F5F5F5;
+}
+
+.unit-shortcut {
+    color: #0F1626
+}
+
+.landing-left {
+    text-align: right;
+}
+
+.dashboard {
+    width: 90%;
+    margin: auto
+}
+
+.dashboard-nav p,
+.float-right p {
+    display: inline-block;
+    padding-right: 10px
+}
+
+.subject-container {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px 0 15px 5px;
+    border-bottom: 1px dashed #FF533D;
+    border-top: 2px dashed #FF533D;
+}
+
+/*
+.subject-container > form {
+    display: inline-block;
+    width: 50%;
+
+}
+*/
+
+.subject-title button,
+.unit button,
+.subject-title select,
+input[type="submit"],
+.to-dashboard {
+    font-size: 14px;
+}
+
+.subject-title,
+.unit-title-dash {
+    background: transparent;
+}
+
+.inline-form {
+    display: inline;
+}
+
+#unit-desc-dash {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    height: 55px;
+    margin-bottom: 25px;
+}
+
+.unit-title-dash {
+    font-size: 18px;
+}
+
+.lesson-container {
+    padding-bottom: 15px;
+    border-top: 1px dashed #FF533D;
+    padding-top: 15px;
+}
+
+.lesson-short {
+    border: 1px solid #0F1626;
+    width: 19.6%;
+    display: inline-block;
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 250px;
+    overflow: auto;
+}
+
+.lesson-short > button {
+    float: right;
+}
+
+.lesson-end {
+    text-align: center;
+}
+
+.lesson-end > button {
+    float: none;
+    vertical-align: middle;
+    margin-top: 50%;
+}
+
+.unit {
+    border-bottom: 1px dashed #FF533D;
+}
+
+.create,
+.lesson-detail {
+    max-width: 1000px;
+    width: 75%;
+    margin: auto;
+    padding: 50px 10px;
+}
+
+.day-container {
+    display: inline-block;
+}
+
+.lesson-detail input[type="text"],
+.day-container,
+.create textarea,
+.lesson-detail textarea {
+    width: 49.5%;
+}
+
+.create textarea,
+.lesson-detail textarea {
+    vertical-align: top;
+    font-size: 14px;
+    height: 128px
+}
+
+.cancel-button,
+.to-dashboard,
+.delete {
+    font-size: 12px;
+    margin-right: 5px;
+    border: none;
+}
+
+.cancel-button,
+.delete {
+    float: right;
+}
+
+
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+footer {
+    color: #F5F5F5;
+    background-color: #0F1626;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+footer a {
+    padding-left: 10px;
+}
+
+footer p {
+    display: inline-block;
+}
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles below this line
+*/
+
+@media only screen and (max-width: 900px) {
+    .lesson-short {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .landing-row > div,
+    .landing-row > form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lesson-short {
+        width: 47%;
+    }
+
+    .create textarea,
+    .lesson-detail textarea,
+    .lesson-detail input[type="text"] {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    * {
+        text-align: center;
+    }
+
+    body,
+    a,
+    p,
+    button,
+    input[type="submit"] {
+        font-size: 16px;
+    }
+
+    header,
+    footer {
+        text-align: center;
+    }
+
+    footer a {
+        padding: 10px 0 5px 0;
+    }
+
+    footer p {
+        display: block;
+    }
+
+    a {
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 0;
+    }
+
+    .float-right {
+        float: none;
+        text-align: center;
+    }
+
+    .float-right p {
+        padding-right: 0;
+    }
+
+    .landing-row > div,
+    .landing-row > form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lesson-short {
+        width: 100%;
+        height: 240px;
+    }
+
+    .create textarea,
+    .lesson-detail textarea {
+        width: 90%;
+    }
+
+    .cancel-button {
+        float: none;
+    }
+
+}

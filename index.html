@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free, Unit-based Lesson Planner">
+    <meta name="author" content="Julia Miller">
+    <title>Lesson Planner </title>
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light+Two" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="clearfix" role="banner" id="landing">
+        <a href="#" id="home">
+            <h2>Lesson planner</h2>
+            <h3 class="user-banner">Welcome, Mrs. Miller!</h3>
+        </a>
+
+        <nav role="navigation" class="float-right">
+            <div class="landing-nav">
+                <a href="#log-in" id="log-in-nav-link">Log in</a>
+                <a href="#create-account-form" id="create-account-nav-link">Create an account</a>
+                <a href="#more-info" id="info-link">More info</a>
+            </div>
+            <div class="dashboard-nav">
+                <button class="create-subject-nav">Add a subject</button>
+                <button class="create-unit-nav">Add a unit</button>
+                <button class="create-lesson-nav">Add a lesson</button>
+                <button id="log-out-link">Log out</button><br>
+            </div>
+            <div class="subject-shortcuts float-right">
+            </div>
+        </nav>
+
+        <input type="hidden" id="loggedInUser" value="">
+    </header>
+
+    <main role="main">
+        <div id="landing-page">
+            <section role="region" class="landing-row">
+                <div class="landing-left">
+                    <h1>Lesson Planner</h1>
+                    <p>A clean, mobile-friendly, unit-based lesson planner to help you work efficiently.</p>
+                </div>
+                <div class="landing-right">
+                    <img src="https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-user-dashboard.png?raw=true" alt="user dashboard">
+                </div>
+            </section>
+
+            <div class="row2">
+                <section role="region" class="landing-row">
+                    <div class="landing-left" id="more-info">
+                        <img src="https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-lesson-detail-cropped.png?raw=true" alt="lesson detial">
+                        <p>Lesson Planner allows you to quickly create lesson plans organized into units. Your dashboard allows immediate access to your unit plans, on your computer or device. You can easily view and print detailed lesson plans.</p>
+                    </div>
+                    <div class="landing-right">
+
+                        <form id="log-in">
+                            <fieldset>
+                                <legend>Log in</legend>
+                                <label for="username">Username</label>
+                                <input type="text" name="username" id="username" required value="username">
+                                <label for="password">Password</label>
+                                <input type="password" aria-label="password" name="password" id="passwordInput" required value="password">
+                                <button id="log-in-button" type="submit">Log in</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <section class="landing-row" role="region">
+                <div class="landing-left" id="create-account-container">
+                    <form id="create-account-form">
+                        <fieldset>
+                            <legend>Create an Account</legend>
+                            <label for="new-name">Name for greeting</label>
+                            <input type="text" name="new-name" id="new-name" required value="Mrs. Miller" aria-label="name-for-greeting"><br>
+                            <label for="new-username">Username</label>
+                            <input type="text" name="new-username" id="new-username" required value="username" aria-label="Username"><br>
+                            <label for="new-password">Password</label>
+                            <input type="password" name="new-password" id="new-password" required value="password" aria-label="password"><br>
+                            <label for="confirm-password">Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required value="password" aria-label="confirm password"><br>
+                            <button type="submit">Create an account</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="landing-right">
+                    <img src="https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-responsive.jpg?raw=true" alt="lesson planner screenshot responsive">
+                </div>
+            </section>
+        </div>
+
+        <section class="create"></section>
+
+        <section role="region" class="dashboard"></section>
+
+        <section class="lesson-detail" role="region">
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>Julia Miller 2018</p>
+        <span class="float-right">
+        Contact:
+        <a href="mailto:opie.julia@gmail.com"><i title="email" class="fas fa-envelope"></i></a>
+        <a href="https://github.com/jgmil"><i title="GitHub" class="fab fa-github"></i></a>
+        </span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
