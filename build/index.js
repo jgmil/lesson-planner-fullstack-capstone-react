@@ -64,6 +64,10 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _landing = __webpack_require__(548);
+	
+	var _landing2 = _interopRequireDefault(_landing);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var render = _reactDom2.default.render;
@@ -76,6 +80,10 @@
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	                        return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	});
+	
+	document.addEventListener('DOMContentLoaded', function () {
+	                        return _reactDom2.default.render(_react2.default.createElement(_landing2.default, null), document.getElementById('landing-page'));
 	});
 
 /***/ }),
@@ -68125,6 +68133,114 @@
 	                'a',
 	                { href: 'https://github.com/jgmil' },
 	                _react2.default.createElement('i', { title: 'GitHub', className: 'fab fa-github' })
+	            )
+	        )
+	    );
+	}
+
+/***/ }),
+/* 548 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = Landing;
+	
+	__webpack_require__(58);
+	
+	__webpack_require__(126);
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(12);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _enzyme = __webpack_require__(128);
+	
+	var _enzymeAdapterReact = __webpack_require__(525);
+	
+	var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	(0, _enzyme.configure)({ adapter: new _enzymeAdapterReact2.default() });
+	
+	function Landing(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	            'section',
+	            { role: 'region', className: 'landing-row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'landing-left' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Lesson Planner'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'A clean, mobile-friendly, unit-based lesson planner to help you work efficiently.'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'landing-right' },
+	                _react2.default.createElement('img', { src: 'https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-user-dashboard.png?raw=true', alt: 'user dashboard' })
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row2' },
+	            _react2.default.createElement(
+	                'section',
+	                { role: 'region', className: 'landing-row' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'landing-left', id: 'more-info' },
+	                    _react2.default.createElement('img', { src: 'https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-lesson-detail-cropped.png?raw=true', alt: 'lesson detial' }),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Lesson Planner allows you to quickly create lesson plans organized into units. Your dashboard allows immediate access to your unit plans, on your computer or device. You can easily view and print detailed lesson plans.'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'log-in-form landing-right' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Form Here'
+	                    )
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            'section',
+	            { className: 'landing-row', role: 'region' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'landing-left', id: 'create-account-container' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Form Here'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'landing-right' },
+	                _react2.default.createElement('img', { src: 'https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-responsive.jpg?raw=true', alt: 'lesson planner screenshot responsive' })
 	            )
 	        )
 	    );
