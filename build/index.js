@@ -72,7 +72,6 @@
 	
 	var render = _reactDom2.default.render;
 	
-	// import '../assets/css/main.css';
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	                          return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
@@ -22810,9 +22809,13 @@
 	                'Lesson planner'
 	            ),
 	            _react2.default.createElement(
-	                'h3',
+	                'span',
 	                { className: 'user-banner' },
-	                'Welcome!'
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Welcome!'
+	                )
 	            )
 	        ),
 	        _react2.default.createElement(
@@ -68231,13 +68234,13 @@
 	                            _react2.default.createElement(
 	                                'label',
 	                                { htmlFor: 'username' },
-	                                'Username'
+	                                'Username (username for demo)'
 	                            ),
 	                            _react2.default.createElement('input', { type: 'text', name: 'username', id: 'username', required: true }),
 	                            _react2.default.createElement(
 	                                'label',
 	                                { htmlFor: 'password' },
-	                                'Password'
+	                                'Password (password for demo)'
 	                            ),
 	                            _react2.default.createElement('input', { type: 'password', 'aria-label': 'password', name: 'password', id: 'passwordInput', required: true }),
 	                            _react2.default.createElement(
