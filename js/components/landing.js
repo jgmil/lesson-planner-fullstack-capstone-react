@@ -29,14 +29,36 @@ export default function Landing(props) {
                         <p>Lesson Planner allows you to quickly create lesson plans organized into units. Your dashboard allows immediate access to your unit plans, on your computer or device. You can easily view and print detailed lesson plans.</p>
                     </div>
                 <div className="log-in-form landing-right">
-                    <h2>Form Here</h2>
+                    <form id="log-in">
+                        <fieldset>
+                            <legend>Log in</legend>
+                            <label htmlFor="username">Username</label>
+                            <input type="text" name="username" id="username" required />
+                            <label htmlFor="password">Password</label>
+                            <input type="password" aria-label="password" name="password" id="passwordInput" required  />
+                            <button id="log-in-button" type="submit">Log in</button>
+                        </fieldset>
+                    </form>
                 </div>
                 </section>
             </div>
 
             <section className="landing-row" role="region">
                 <div className="landing-left" id="create-account-container">
-                    <h2>Form Here</h2>
+                    <form id="create-account-form">
+                        <fieldset>
+                            <legend>Create an Account</legend>
+                            <label htmlFor="new-name">Name for greeting</label>
+                            <input type="text" name="new-name" id="new-name" required  aria-label="name-for-greeting" /><br />
+                            <label htmlFor="new-username">Username</label>
+                            <input type="text" name="new-username" id="new-username" required  aria-label="Username" /><br />
+                            <label htmlFor="new-password">Password</label>
+                            <input type="password" name="new-password" id="new-password" required aria-label="password" /><br />
+                            <label htmlFor="confirm-password">Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required  aria-label="confirm password" /><br />
+                            <button type="submit">Create an account</button>
+                        </fieldset>
+                    </form>
                 </div>
                 <div className="landing-right">
                     <img src="https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/screenshots/lesson-planner-responsive.jpg?raw=true" alt="lesson planner screenshot responsive" />

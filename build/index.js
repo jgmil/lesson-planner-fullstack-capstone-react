@@ -75,15 +75,15 @@
 	// import '../assets/css/main.css';
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
+	                          return _reactDom2.default.render(_react2.default.createElement(_header2.default, null), document.getElementById('reactHeader'));
 	});
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
+	                          return _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.getElementById('reactFooter'));
 	});
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	                        return _reactDom2.default.render(_react2.default.createElement(_landing2.default, null), document.getElementById('landing-page'));
+	                          return _reactDom2.default.render(_react2.default.createElement(_landing2.default, null), document.getElementById('landing-page'));
 	});
 
 /***/ }),
@@ -68218,9 +68218,34 @@
 	                    'div',
 	                    { className: 'log-in-form landing-right' },
 	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Form Here'
+	                        'form',
+	                        { id: 'log-in' },
+	                        _react2.default.createElement(
+	                            'fieldset',
+	                            null,
+	                            _react2.default.createElement(
+	                                'legend',
+	                                null,
+	                                'Log in'
+	                            ),
+	                            _react2.default.createElement(
+	                                'label',
+	                                { htmlFor: 'username' },
+	                                'Username'
+	                            ),
+	                            _react2.default.createElement('input', { type: 'text', name: 'username', id: 'username', required: true }),
+	                            _react2.default.createElement(
+	                                'label',
+	                                { htmlFor: 'password' },
+	                                'Password'
+	                            ),
+	                            _react2.default.createElement('input', { type: 'password', 'aria-label': 'password', name: 'password', id: 'passwordInput', required: true }),
+	                            _react2.default.createElement(
+	                                'button',
+	                                { id: 'log-in-button', type: 'submit' },
+	                                'Log in'
+	                            )
+	                        )
 	                    )
 	                )
 	            )
@@ -68232,9 +68257,50 @@
 	                'div',
 	                { className: 'landing-left', id: 'create-account-container' },
 	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    'Form Here'
+	                    'form',
+	                    { id: 'create-account-form' },
+	                    _react2.default.createElement(
+	                        'fieldset',
+	                        null,
+	                        _react2.default.createElement(
+	                            'legend',
+	                            null,
+	                            'Create an Account'
+	                        ),
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'new-name' },
+	                            'Name for greeting'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'text', name: 'new-name', id: 'new-name', required: true, 'aria-label': 'name-for-greeting' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'new-username' },
+	                            'Username'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'text', name: 'new-username', id: 'new-username', required: true, 'aria-label': 'Username' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'new-password' },
+	                            'Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', name: 'new-password', id: 'new-password', required: true, 'aria-label': 'password' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'label',
+	                            { htmlFor: 'confirm-password' },
+	                            'Password'
+	                        ),
+	                        _react2.default.createElement('input', { type: 'password', name: 'confirm-password', id: 'confirm-password', required: true, 'aria-label': 'confirm password' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'button',
+	                            { type: 'submit' },
+	                            'Create an account'
+	                        )
+	                    )
 	                )
 	            ),
 	            _react2.default.createElement(
