@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 const render = ReactDOM.render;
 import {Provider} from 'react-redux';
 
-// import '../assets/css/main.css';
-
 import Header from '../js/components/header';
 import Footer from '../js/components/footer';
 import Landing from '../js/components/landing';

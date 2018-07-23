@@ -14,7 +14,7 @@ export default function Header(props) {
         <header className="clearfix" role="banner" id="landing">
             <a href="#" id="home">
                 <h2>Lesson planner</h2>
-                <h3 className="user-banner">Welcome!</h3>
+                <span className="user-banner"><h3>Welcome!</h3></span>
             </a>
 
             <nav role="navigation" className="float-right">
