@@ -32,9 +32,9 @@ export default function Landing(props) {
                     <form id="log-in">
                         <fieldset>
                             <legend>Log in</legend>
-                            <label htmlFor="username">Username</label>
+                            <label htmlFor="username">Username (username for demo)</label>
                             <input type="text" name="username" id="username" required />
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password">Password (password for demo)</label>
                             <input type="password" aria-label="password" name="password" id="passwordInput" required  />
                             <button id="log-in-button" type="submit">Log in</button>
                         </fieldset>
