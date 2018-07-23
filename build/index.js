@@ -68234,13 +68234,13 @@
 	                            _react2.default.createElement(
 	                                'label',
 	                                { htmlFor: 'username' },
-	                                'Username (username for demo)'
+	                                'Username (demo: username)'
 	                            ),
 	                            _react2.default.createElement('input', { type: 'text', name: 'username', id: 'username', required: true }),
 	                            _react2.default.createElement(
 	                                'label',
 	                                { htmlFor: 'password' },
-	                                'Password (password for demo)'
+	                                'Password (demo: password)'
 	                            ),
 	                            _react2.default.createElement('input', { type: 'password', 'aria-label': 'password', name: 'password', id: 'passwordInput', required: true }),
 	                            _react2.default.createElement(
