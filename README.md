@@ -26,13 +26,11 @@ The Lesson Planner is for educators interested in creating cohesive unit and les
 
 #### As a logged in user:
 
-* As a user, I should be able to view my classes, units and lesson plans.
+* As a user, I should be able to view my subjects, units and lesson plans.
 
-* As a user, I should be able to create a new class, unit and lesson plan.
+* As a user, I should be able to create a new subject, unit and lesson plan.
 
-* As a user, I should be able to update or delete a class, unit or lesson plan.
-
-* As a user, I should be able to print my lesson plans.
+* As a user, I should be able to update or delete a subject, unit or lesson plan.
 
 * As a logged in user, I should be able to log out.
 ![Wireframe design handwritten draft](https://github.com/jgmil/lesson-planner-fullstack-capstone/blob/master/public/img/user-dashboard.png?raw=true)
@@ -51,7 +49,7 @@ Find a working prototype with Node at https://jgmil-lesson-planner.herokuapp.com
 ## Functionality
 * When they first set up their account, users will be prompted to create their first class.
 * Logged in users can create, update and delete classes, units and lesson plans.
-* Logged in users can print their lesson plans.
+* Logged in users can view detailed lesson plans.
 
 ## Technical
 The Lesson planner was built as two separate parts.
